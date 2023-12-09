@@ -1,1 +1,26 @@
 // Your styles go here
+@import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+$tmnt-green: darkgreen;
+
+h1 {
+    font-size: 250px;
+}
+.head {
+    background-color: $tmnt-green;
+    color: rgb(199, 249, 199);
+    // font-size: rem;
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+.logo {
+    margin-left: -12%;
+}
+
+.nav-background {
+    background: #008080;
+}
+footer {
+    background-color: $tmnt-green;
+}
