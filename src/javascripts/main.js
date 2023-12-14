@@ -1,19 +1,5 @@
-// Required by Webpack - do not touch
-require.context('../fonts/', true, /\.(eot|ttf|woff|woff2)$/i)
-require.context('../images/', true, /\.(png|jpg|jpeg|gif|svg)$/i)
-require("../stylesheets/main.scss")
-
-//TODO - Your ES6 JavaScript code (if any) goes here
-
-// Import all of Bootstrap's JS
-import * as bootstrap from 'bootstrap'
-
-import Alert from 'bootstrap/js/dist/alert'
-
-
-//TODO - Your ES6 JavaScript code (if any) goes here
-import "bootstrap"
-import { searches } from './searches'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { searches } from './searches';
 
 for (let s of searches) {
     let s_thumb = document.getElementById('s' + s.id)
@@ -34,11 +20,12 @@ function displaySearch(search) {
             <a class="" href="${search.link}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <div class="card-header">${search.title}</div>
                 <div class="card-body"> 
-                    <a><!-- Missing closing tag in the original code -->
+                    <a>
                         <div class="card-footer text-muted">
                             <button>Explore Now!</button>
                         </div>
                     </a>
+            
                 </div>
             </a>
         </div>

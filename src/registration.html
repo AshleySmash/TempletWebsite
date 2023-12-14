@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./stylesheets/main.scss">
+    <title>Registration Page (Tortuga Lobby)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="container bg-dark ">
+    <header class="head rounded-top row">
+        <div class="col-5 col-md-3 ps-0">
+            <img src="./images/Logo.png" alt="Tortuga Lobby Logo: Cartoon turtle eating a slice of pizza" class="me-5">
+        </div>
+        <div class="col-5 col-md-9 logo ps-md-5 pt-md-4">
+            <h1 class="tmnt d-inline fw-bold">Tortuga Lobby</h1>
+        </div>
+        <div class="col  align-self-end w-50">
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container px-lg-0 mx-lg-0">
+                    <button class="bg-white  mb-3 navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+                    <div class="collapse navbar-collapse nav-background mx-lg-0 px-lg-0" id="navbarSupportedContent">
+                        <ul class="navbar-nav pe-md-4">
+                            <li class="nav-item ">
+                                <a class=" ps-lg-3 ps-md-4 text-white nav-link"
+                                    aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ps-md-4 text-white nav-link ps-lg-3 active fw-bold text-decoration-underline link-offset-2"
+                                    href="./registration.html">Registration</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ps-md-4 text-white nav-link ps-lg-3" href="./summaries.html">Summaries</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ps-md-4 text-white nav-link ps-lg-3" href="./about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ps-md-4 text-white nav-link ps-lg-3" href="./merchandise.html">Merchandise & Crafts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ps-md-4 text-white nav-link ps-lg-3" href="./News.html">News and Updates</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex justify-content-end p-4 p-lg-0" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-dark" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="row regformbg">
+        <div class="titlebg text-center p-3">
+            <h2>Site Registration</h2>
+        </div>
+        <form class="row g-3 pb-4 ps-4 pe-2" id="registrationForm">
+            <div class="col-lg-12">
+                <label for="validationDefaultFullName" class="form-label fw-bold">Full Name</label>
+                <input type="text" class="form-control" id="validationDefaultFullName" placeholder="John Doe" required>
+            </div>
+            <div class="col-lg-12">
+                <label for="validationDefaultUsername" class="form-label fw-bold">Email/Username</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                    <input type="text" class="form-control" id="validationDefaultUsername"
+                        aria-describedby="inputGroupPrepend2" required>
+                </div>
+                <small class="text-muted">Your Email is your Username</small>
+            </div>
+            <div class="col-lg-12">
+                <label for="validationDefaultPassword" class="form-label fw-bold">Password</label>
+                <div class="input-group">
+                    <input type="password" class="form-control" id="validationDefaultPassword" placeholder="********"
+                        required>
+                    <button class="btn btn-outline-secondary" type="button" id="togglePassword">👁️</button>
+                </div>
+                <small id="passwordHelp" class="form-text text-muted">
+                    Password must be at least 8 characters long and include at least one uppercase letter, one lowercase
+                    letter, one number, and one special character.
+                </small>
+            </div>
+            <div class="col-6 col-lg-4">
+                <label for="validationDefaultState" class="form-label text-muted">State (Optional)</label>
+                <select class="form-select" id="validationDefaultState">
+                    <option selected disabled value="">Choose...</option>
+                    <option>Alabama</option>
+                    <option>Alaska</option>
+                    <option>Arizona</option>
+                    <option>Arkansas</option>
+                    <option>California</option>
+                    <option>Colorado</option>
+                    <option>Connecticut</option>
+                    <option>Delaware</option>
+                    <option>Florida</option>
+                    <option>Georgia</option>
+                    <option>Hawaii</option>
+                    <option>Idaho</option>
+                    <option>Illinois</option>
+                    <option>Indiana</option>
+                    <option>Iowa</option>
+                    <option>Kansas</option>
+                    <option>Kentucky</option>
+                    <option>Louisiana</option>
+                    <option>Maine</option>
+                    <option>Maryland</option>
+                    <option>Massachusetts</option>
+                    <option>Michigan</option>
+                    <option>Minnesota</option>
+                    <option>Mississippi</option>
+                    <option>Missouri</option>
+                    <option>Montana</option>
+                    <option>Nebraska</option>
+                    <option>Nevada</option>
+                    <option>New Hampshire</option>
+                    <option>New Jersey</option>
+                    <option>New Mexico</option>
+                    <option>New York</option>
+                    <option>North Carolina</option>
+                    <option>North Dakota</option>
+                    <option>Ohio</option>
+                    <option>Oklahoma</option>
+                    <option>Oregon</option>
+                    <option>Pennsylvania</option>
+                    <option>Rhode Island</option>
+                    <option>South Carolina</option>
+                    <option>South Dakota</option>
+                    <option>Tennessee</option>
+                    <option>Texas</option>
+                    <option>Utah</option>
+                    <option>Vermont</option>
+                    <option>Virginia</option>
+                    <option>Washington</option>
+                    <option>West Virginia</option>
+                    <option>Wisconsin</option>
+                    <option>Wyoming</option>
+                </select>
+            </div>
+
+            <div class="col-6 col-lg-4">
+                <label for="validationDefaultCity" class="form-label text-muted">City (Optional)</label>
+                <input type="text" class="form-control" id="validationDefaultCity">
+            </div>
+
+            <div class="col-6 col-lg-4">
+                <label for="validationDefaultZip" class="form-label fw-bold">Zip</label>
+                <input type="text" class="form-control" id="validationDefaultZip">
+            </div>
+            <div class="col-6">
+                <label for="validationDefaultAptNumber" class="form-label text-muted">Apartment #
+                    (Optional)</label>
+                <input type="text" class="form-control" id="validationDefaultAptNumber">
+            </div>
+            <div class="col-6 col-lg-6">
+                <label for="validationDefaultPhoneNumber" class="form-label fw-bold">Phone Number</label>
+                <input type="tel" class="form-control" id="validationDefaultPhoneNumber" placeholder="123-456-7890"
+                    required>
+                <small class="text-muted">This will be used to contact you if any issues arise. It will not be
+                    shared</small>
+            </div>
+            <div class="col-6">
+                <label for="validationDefaultDOB" class="form-label fw-bold">Date of Birth</label>
+                <input type="date" class="form-control" id="validationDefaultDOB" required>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                        <span id="termsLink" style="cursor: pointer; text-decoration: underline; color: blue;">
+                            Agree to terms and conditions
+                        </span>
+                        
+                    </label>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-end align-items-end">
+                <button id="cancelButton" type="reset" class="btn btn-danger me-2">Cancel</button>
+
+                <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="rounded row pt-3">
+        <div class="footNav d-flex justify-content-evenly">
+          <div>
+            <ul class="list-unstyled px-2">
+              <li class="fw-bold text-decoration-underline link-offset-2">Links</li>
+              <li class="linkNav"><a href="./index.html" class="text-decoration-none">Home</a></li>
+              <li class="linkNav"><a href="./summaries.html" class="text-decoration-none">Summaries</a></li>
+              <li class="linkNav"><a href="merchandise.html" class="text-decoration-none">Merchandise & Crafts</a></li>
+              <li class="linkNav"><a href="./about.html" class="text-decoration-none">About</a></li>
+              <li class="linkNav"><a href="./News.html" class="text-decoration-none">News & Updates</a></li>
+              <li class="linkNav"><a href="./registration.html" class="text-decoration-none">Registration</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="list-unstyled px-2">
+              <li class="fw-bold text-decoration-underline link-offset-2">Contact</li>
+              <li>111-111-1111</li>
+              <li class="linkNav"><a href="./error.html" class="text-decoration-none"> @facebook</a></li>
+              <li class="linkNav"><a href="./error.html" class="text-decoration-none">@instagram</a></li>
+              <li class="linkNav"><a href="./error.html" class="text-decoration-none">fakeMail@gmail.com</a></li>
+              <li>111 W 222 N Perry, UT</li>
+            </ul>
+          </div>
+        </div>
+        <p class="d-flex justify-content-center fw-bold text-white">&copy; 2023 All Copy Rights reserved</p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-pzjw8V+XVs9ZLXSZO0sWP5qFqkVEt2hK3UqOibQxgI8owMkoeVkgPe1a9xuPszs"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+
+<script type="module" src="./javascripts/registration.js"></script>
+
+</body>
+</html>
